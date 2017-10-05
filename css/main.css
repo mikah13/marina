@@ -1,17 +1,3 @@
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0px;
-}
-
-hr {
-    margin-left: 0px;
-    border: 0.5px solid #ccc;
-}
-
 #logo {
     height: 150%;
 }
@@ -19,6 +5,15 @@ hr {
 .navbar-inverse {
     margin-bottom: 0px;
     border-radius: 0px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 .jumbotron {
@@ -60,23 +55,31 @@ hr {
     color: black;
 }
 
-.introduction, .performance {
-    background-color: #ede9e1;
-    text-align: center;
-    height: 400px;
-}
-
 .introduction {
     padding-top: 40px;
     padding-bottom: 40px;
+    height: 500px;
 }
 
-.product, .performance {
+.introduction, .performance {
+    margin-top: -15px;
+    background-color: #ede9e1;
+    text-align: center;
+}
+
+.performance {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 500px;
+    margin-top: 0px;
+}
+
+#product {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.our-products {
+.products {
     text-align: center;
     background-color: #8c6344;
     color: white;
@@ -85,12 +88,8 @@ hr {
     z-index: 2;
 }
 
-#banner2 {
+#banner2, #banner3 {
     height: 500px;
-}
-
-#banner3 {
-    height: 400px;
 }
 
 .intro {
@@ -109,22 +108,6 @@ hr {
     width: 250px;
 }
 
-footer {
-    height: 350px;
-    background-color: #403832;
-    padding: 60px 0px 0px 130px;
-}
-
-.footer {
-    max-width: 70%;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: white;
-}
-
 @media screen and (max-width:767px) {
     .intro {
         text-align: center;
@@ -132,7 +115,6 @@ footer {
         padding-left: 2%;
     }
     .introduction {
-        height: 500px;
         padding-top: 30px;
         margin-top: 0px;
     }
@@ -140,24 +122,11 @@ footer {
         height: 200px;
         width: auto;
     }
-    .our-products {
-        height: 400px;
-    }
-    #banner2{
+    .products {
+        /*padding-bottom: 30px;*/
         height: 400px;
     }
     #banner3 {
         display: none;
-    }
-    footer {
-        height: 100vh;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .footer {
-        margin-left: 2%;
-    }
-    hr {
-        width: 100%;
     }
 }
