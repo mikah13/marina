@@ -6,7 +6,7 @@
     <title>Marina Cafe</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="BCIT CST: Web Development Assignment 2">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="shortcut icon" href="images/logo.png">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -15,7 +15,7 @@
 </head>
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="Logo"/></a>
@@ -43,21 +43,20 @@
         <div class="intro">
             <h1>Marina Cafe</h1>
             <p>
-                What do you want most from coffee?
-            </p>
-            <p>
-                That’s what you get most from Marina Cafe.
+                What do you want most from coffee? That’s what you get most from Marina Cafe.
             </p>
         </div>
     </div>
 </div>
 
+
 <div class="introduction container-fluid">
     <div class="col-lg-6">
         <img class="center-block owner" src="images/owner.jpg" alt="Marina Santos" />
-        <figcaption>
+        <p>
             Marina Santos - Founder of Marina Cafe
-        </figcaption>
+        </p>
+
     </div>
     <div class="col-lg-4">
         <h1>Who We Are</h1>
@@ -66,10 +65,11 @@
         </p>
         <a href="index.html" class="btn btn-primary about-btn">Learn more</a>
     </div>
-
 </div>
-<div id="product" class="container-fluid">
-    <div class="products col-lg-6 col-xs-12">
+
+
+<div class="product container-fluid">
+    <div class="our-products col-lg-6 col-xs-12">
         <h1>Our Products</h1>
         <p>
             We provide a variety of services both to our new and regular customers. If you can think of anything connected with coffee, then we can offer it at our Coffee Shop.
@@ -77,20 +77,91 @@
         <a href="menu.html" class="btn btn-primary menu-btn">Learn more</a>
     </div>
     <div class="col-xs-12 col-lg-6 parallax" id="banner2" style="background-image: url('images/banner2.jpg')">
+        <div class="container-fluid menu-list">
+            <div class="col-xs-6 col-lg-6 product-list">
+                <img src="images/coffee.png" alt="Coffee" class="product-img" />
+                <h3>Coffee</h3>
+            </div>
+            <div class="col-xs-6 col-lg-6 product-list">
+                <img src="images/tea.png" alt="Tea" class="product-img" />
+                <h3>Tea</h3>
+            </div>
+        </div>
+        <div class="container-fluid menu-list" id="menu-item">
+            <div class="col-xs-6 col-lg-6 product-list">
+                <img src="images/muffin.png" alt="Muffin" class="product-img" />
+                <h3>Cookies, Muffins and Bagels</h3>
+            </div>
+            <div class="col-xs-6 col-lg-6 product-list">
+                <img src="images/soft-drink.png" alt="Soft Drink" class="product-img" />
+                <h3>Soft Drink</h3>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="performance container-fluid">
-    <div class="col-lg-6 parallax" id="banner3" style="background-image: url('https://images.pexels.com/photos/13959/pexels-photo-13959.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb')">
+    <div class="col-lg-6 parallax" id="banner3" style="background-image: url('images/banner3.jpeg')">
+        <div class="container-fluid performance-artist">
+            <img src="images/JTGray.jpg" alt="JTGray" />
+            <img src="images/BrianArrowwood.jpg" alt="Brian Arrowwood" />
+        </div>
+
     </div>
     <div class="col-lg-6">
         <h1>Performances</h1>
         <p>
-
+            We have special performaces held every Thursday night from 7:30pm to 9:30pm.
         </p>
+        <a href="performance.html" class="btn btn-primary about-btn">Learn more</a>
     </div>
 </div>
 
+
+<footer class="container-fluid">
+    <div class="footer">
+        <div class="col-lg-4">
+            <h3>Pages</h3>
+            <hr />
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="performance.html">Performances</a>
+                </li>
+                <li>
+                    <a href="job.html">Jobs</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-5">
+            <h3>Contact Us</h3>
+            <hr />
+            <address>
+                    667 Lawrence Ave.
+                        <br />
+                    Kelowna, BC V1Y 6L8
+                        <br />
+                    1-888-888-8888
+            </address>
+            <a href='mailt&#111;&#58;mari&#110;a&#64;m%6&#49;r&#105;nac%61fe&#46;%&#54;3&#111;&#37;6D'>Email: marina@marinacafe.com</a>
+        </div>
+        <div class="col-lg-3">
+            <h3>Follow Us</h3>
+            <hr />
+            <ul class="list-inline">
+                <li><a href="#"><img src="images/facebook.png" alt="facebook-icon"/></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="instagram-icon"/></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="twitter-icon"/></a></li>
+                <li><a href="#"><img src="images/youtube.png" alt="youtube-icon"/></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
