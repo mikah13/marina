@@ -51,14 +51,14 @@
 
 
 <div class="introduction container-fluid">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <img class="center-block owner" src="images/owner.jpg" alt="Marina Santos" />
         <p>
             Marina Santos - Founder of Marina Cafe
         </p>
 
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
         <h1>Who We Are</h1>
         <p>
             We are a team of dedicated coffee fans who celebrate exceptional coffee brands and roasters by providing our guests the unique opportunity to try coffee drinks of the highest quality.
@@ -69,14 +69,14 @@
 
 
 <div class="product container-fluid">
-    <div class="our-products col-lg-6 col-xs-12">
+    <div class="our-products col-lg-6 col-md-12 col-xs-12">
         <h1>Our Products</h1>
         <p>
             We provide a variety of services both to our new and regular customers. If you can think of anything connected with coffee, then we can offer it at our Coffee Shop.
         </p>
         <a href="menu.html" class="btn btn-primary menu-btn">Learn more</a>
     </div>
-    <div class="col-xs-12 col-lg-6 parallax" id="banner2" style="background-image: url('images/banner2.jpg')">
+    <div class="col-lg-6 cold-md-6 col-xs-12 parallax" id="banner2" style="background-image: url('images/banner2.jpg')">
         <div class="container-fluid menu-list">
             <div class="col-xs-6 col-lg-6 product-list">
                 <img src="images/coffee.png" alt="Coffee" class="product-img" />
@@ -101,18 +101,32 @@
 </div>
 
 <div class="performance container-fluid">
-    <div class="col-lg-6 parallax" id="banner3" style="background-image: url('images/banner3.jpeg')">
+    <div class="col-lg-6 hidden-md hidden-xs hidden-sm parallax" id="banner3" style="background-image: url('images/banner3.jpeg')">
         <div class="container-fluid performance-artist">
-            <img src="images/JTGray.jpg" alt="JTGray" />
-            <img src="images/BrianArrowwood.jpg" alt="Brian Arrowwood" />
+            <div class="col-lg-6">
+                <img src="images/JTGray.jpg" alt="JTGray" />
+            </div>
+            <div class="col-lg-6">
+                <img src="images/BrianArrowwood.jpg" alt="Brian Arrowwood" />
+            </div>
+
         </div>
 
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h1>Performances</h1>
         <p>
             We have special performaces held every Thursday night from 7:30pm to 9:30pm.
         </p>
+        <div class="container-fluid performance-artist">
+            <div class="hidden-lg col-md-6 col-sm-6 col-xs-6">
+                <img src="images/JTGray.jpg" alt="JTGray" />
+            </div>
+            <div class="hidden-lg col-md-6 col-sm-6 col-xs-6">
+                <img src="images/BrianArrowwood.jpg" alt="Brian Arrowwood" />
+            </div>
+
+        </div>
         <a href="performance.html" class="btn btn-primary about-btn">Learn more</a>
     </div>
 </div>
@@ -120,7 +134,7 @@
 
 <footer class="container-fluid">
     <div class="footer">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
             <h3>Pages</h3>
             <hr />
             <ul>
@@ -138,7 +152,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-sm-6">
             <h3>Contact Us</h3>
             <hr />
             <address>
@@ -150,7 +164,7 @@
             </address>
             <a href='mailt&#111;&#58;mari&#110;a&#64;m%6&#49;r&#105;nac%61fe&#46;%&#54;3&#111;&#37;6D'>Email: marina@marinacafe.com</a>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
             <h3>Follow Us</h3>
             <hr />
             <ul class="list-inline">
@@ -162,41 +176,8 @@
         </div>
     </div>
 </footer>
-    <div class="fb-login-button" data-width="20" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-    
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '655930461278019',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v2.10'
-    });
-    FB.AppEvents.logPageView();   
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-    FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-        console.log(    statusChangeCallback(response));
-});
-</script>
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=655930461278019";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
 </html>
