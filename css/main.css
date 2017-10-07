@@ -30,7 +30,7 @@ hr {
 .jumbotron {
     padding-bottom: 0px;
     margin-bottom: 0px;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .parallax {
@@ -205,11 +205,11 @@ footer a:hover {
 @media screen and (max-width:468px) and (max-width:767px) {
 
     .jumbotron {
-        min-height: calc(100vh - 56px);
+        height: calc(100vh - 56px);
     }
     .parallax {
-        min-height: calc(100vh - 56px);
-        background-size:auto;
+        height: calc(100vh - 56px);
+
 
     }
     #logo {
