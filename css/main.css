@@ -237,6 +237,11 @@ footer a:hover {
     #banner3 {
         display: none;
     }
+    .performance-artist img{
+
+        height: auto;
+        width: 80%;
+    }
     footer {
         height: 100vh;
         padding-top: 50px;
