@@ -1,5 +1,11 @@
+/* General Styling and Home Page */
+
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .container-fluid {
@@ -70,7 +76,7 @@ ul {
     padding-top: 10%;
     padding-left: 100px;
     padding-right: 100px;
-    height: 500px;
+    height: 600px;
     z-index: 2;
 }
 
@@ -87,16 +93,28 @@ ul {
 .product-img {
     width: 35%;
     height: auto;
-    margin: 10% auto 20px auto;
+    margin: 8% auto 20px auto;
     display: block;
 }
 
 #banner2 {
-    height: 500px;
+    height: 600px;
 }
 
 #banner3 {
     height: 500px;
+}
+
+#banner4 {
+    /**SH*/
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner5 {
+    /**SH*/
+    height: 800px;
 }
 
 .performance {
@@ -114,6 +132,7 @@ ul {
     height: auto;
     display: inline-block;
     margin: 30px auto;
+    border: 4px solid #b58764;
 }
 
 #special-guests {
@@ -121,6 +140,87 @@ ul {
     color: white;
     text-align: center;
     font-size: 60px;
+}
+
+.about-beans {
+    /**SH*/
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #ede9e1;
+}
+
+.arabica {
+    /**SH*/
+    margin: 20px 0 20px 300px;
+    border: 5px solid #8c6344;
+}
+
+.menu-items {
+    /**SH*/
+    background-color: #ffffff;
+    opacity: 0.6;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 150px;
+    padding-left: 30px;
+}
+
+.job-title {
+    /**SH*/
+    background-color: #ede9e1;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 40px;
+}
+
+.coffee-cup {
+    /**SH*/
+    height: auto;
+    width: 400px;
+    border: 5px solid #8c6344;
+    margin-top: 20px;
+}
+
+.apply h1 {
+    /**SH*/
+    padding-bottom: 20px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+.apply {
+    /**SH*/
+    text-align: left;
+    background-color: #8c6344;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 800px;
+    z-index: 2;
+}
+
+label {
+    /**SH*/
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+input {
+    /**SH*/
+    color: #000000;
+}
+
+select {
+    /**SH*/
+    color: #000000;
+    padding-right: 20px;
+}
+
+textarea {
+    /**SH*/
+    color: #000000;
+    padding-right: 20px;
 }
 
 footer {
@@ -148,6 +248,13 @@ footer a:hover {
     padding-left: 15px;
     padding-right: 15px;
     color: white;
+}
+
+.copyright {
+    color: #c3af9f;
+    text-align: center;
+    background-color: #403832;
+    padding-bottom: 1%;
 }
 
 hr {
@@ -198,9 +305,55 @@ hr {
     color: #8c6344;
 }
 
+
+/* End of General Styling and Home Page */
+
+
+/* performance.html */
+
+#performance-title {
+    text-align: center;
+    color: red;
+}
+
+#performance-title h1 {
+    font-weight: bold;
+}
+
+#event-1, #event-2, #event-3 {
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#event-1 {
+    background-color: #83e9bb;
+}
+
+#event-2 {
+    background-color: #7ec8ed;
+}
+
+#event-3 {
+    background-color: #99597b;
+}
+
+#event-1 h1, #event-2 h1, #event-3 h1 {
+    color: rgb(78, 77, 75);
+}
+
+#event-1 img, #event-2 img, #event-3 img {
+    height: 30%;
+    width: auto;
+}
+
+
+/* End of performance.html */
+
 @media screen and (min-width:1240px) {
     p {
-        letter-spacing: 1px;
+        letter-spacing: .3px;
     }
     p, a, address {
         font-size: 1.1em;
@@ -216,15 +369,13 @@ hr {
         color: white;
         font-size: 25px;
     }
-    #brian img:hover, #jgtgray img:hover {
-        width: 70%;
-        height: auto;
-        margin-top: 20%;
-    }
     #performance-info {
         padding-top: 100px;
         padding-left: 100px;
         padding-right: 100px;
+    }
+    #performance-title {
+        padding-top: 20%;
     }
 }
 
@@ -236,6 +387,9 @@ hr {
     }
     .intro h1 {
         font-size: 120px;
+    }
+    #performance-title h1 {
+        font-size: 100px;
     }
     h1 {
         font-size: 40px;
@@ -269,7 +423,7 @@ hr {
     }
 }
 
-@media screen and (max-width:468px) and (max-width:767px) {
+@media screen and (max-width:767px) {
     p, a, address {
         font-size: 13px;
     }
@@ -316,9 +470,9 @@ hr {
         width: 80%;
     }
     footer {
-        height: 600px;
+        height: auto;
         padding-top: 50px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .footer {
         margin-left: 2%;
@@ -329,5 +483,41 @@ hr {
     .btn {
         margin-top: 30px;
         margin-bottom: 10px;
+    }
+    #performance-title {
+        padding-top: 80%;
+    }
+    #performance-title h1 {
+        font-size: calc(11vw);
+    }
+    h2 {
+        font-size: 38px;
+        font-weight: bolder;
+        color: white;
+    }
+    #event-1 h1, #event-2 h1, #event-3 h1 {
+        font-size: 15vw;
+    }
+    #event-1, #event-2, #event-3 {
+        padding-top: 10%;
+        height: auto;
+        padding-bottom: 15%;
+    }
+    #event-1 p, #event-2 p, #event-3 p {
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 6vw;
+        margin-top: 5%;
+    }
+    #event-1 img, #event-2 img, #event-3 img {
+        margin-top: 10px;
+        width: 40%;
+        height: auto;
+    }
+    textarea{
+        width: 100%;
+    }
+    #banner5{
+    display: none;
     }
 }
