@@ -8,7 +8,7 @@ A Website built for Marina Cafe Shop using HTML5, Bootstrap.
 ## Feature
 * Homepage:
 
-  *Brief introduction about the owner
+  * Brief introduction about the owner
   
   * Products
   
