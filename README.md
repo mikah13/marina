@@ -30,3 +30,5 @@ A Website built for Marina Cafe Shop using HTML5, Bootstrap.
   * Job application form that can be sent to a server-side page.
 
 
+## Usage:
+Visit the website at: https://mikah13.github.io/marina/
